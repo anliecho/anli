@@ -18,7 +18,7 @@
 	<!--[if IE]>
     	<script src="<?php bloginfo('template_directory'); ?>/html5.js"></script>
 	<![endif]-->
-	<?php 
+	<?php
 		if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
 		wp_head();

@@ -16,6 +16,7 @@
 			<header id="post_header">
 				<h1><?php the_title(); ?></h1>
 				<time class="time" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+				<div class="views">共<?php if(function_exists('the_views')) { the_views(); } ?></div>
 			</header>
 			<article id="post_content">
 				<?php the_content(); ?>
@@ -27,7 +28,6 @@
 					<?php the_tags((' '), ', '); ?>
 				</footer>
 			<?php endif; ?>
-			<div class="adbanner"><a title="web design inspiraiton" href="http://reeoo.com" target="_blank"><img src="http://media.reeoo.com/reeoo_728.jpg" alt="reeoo.com - web design inspiration" width="728" height="90" /></a></div>
 		</div>
 	<?php endwhile; ?>
 	<?php comments_template(); ?>

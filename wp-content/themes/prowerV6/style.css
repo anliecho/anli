@@ -228,7 +228,7 @@ blockquote p:last-child,.comment_list blockquote p:last-child {margin-bottom:0;}
 }
 @media only screen and (min-width:1281px) {
 	#header_box,.nav,#content,#footer_box {width:80%; margin:0 auto; max-width:1150px;}
-	.page,#main {max-width:800px;}
+	.page,#main {max-width:800px; width: 100%;}
 	#main {float:left;}
 	#sidebar {float:right; width:18%; max-width:250px;}
 	#sidebar .widget {display:block; width:100%; margin:0 0 1em; padding-bottom:1em; padding-top:1em;}
@@ -273,3 +273,7 @@ blockquote p:last-child,.comment_list blockquote p:last-child {margin-bottom:0;}
 	#sidebar {display:none;}
 	blockquote,pre,address,code {font-size:0.9em;}
 }
+
+
+/*update by anli*/
+#post_header .views{ font-size: 0.8em; color: #999; text-align: right; margin-top: -20px;}
